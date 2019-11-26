@@ -1,5 +1,4 @@
-
-ifeq ($(filter msm8998,$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(TARGET_USES_AOSP_HARDWARE), true)
 
 LIBJSON_ROOT := $(call my-dir)
 include $(CLEAR_VARS)
